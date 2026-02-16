@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "cataclysmweather",
+  "version": "1.0.0",
+  "name": "Cataclysm Weather",
+  "description": "Realistic volumetric tornadoes and advanced weather systems.",
+  "authors": [
+    "DreykaOas"
+  ],
+  "contact": {
+    "homepage": "https://cataclysmweather.net/",
+    "sources": "https://github.com/DreykaOas/CataclysmWeather"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cataclysmweather.CataclysmWeather"
+    ],
+    "client": [
+      "net.cataclysmweather.CataclysmWeatherClient"
+    ]
+  },
+  "mixins": [
+    "cataclysmweather.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

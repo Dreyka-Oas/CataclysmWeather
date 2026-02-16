@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.cataclysmweather.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "WeatherCommandMixin",
+    "WorldRendererMixin",
+    "ServerWorldMixin",
+    "CameraAccessor",
+    "WorldMixin",
+    "ParticleManagerMixin",
+    "SoundInstanceMixin",
+    "LightningEntityMixin",
+    "CameraMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

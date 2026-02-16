@@ -1,0 +1,36 @@
+# Gradle
+.gradle/
+build/
+
+# Fabric / Minecraft Run
+fabric/1.21.11/run/
+fabric/1.21.11/build/
+*.log
+fabric/current_run.log
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.project
+.settings/
+.classpath
+.factorypath
+bin/
+
+# Java
+*.class
+*.jar
+!fabric/1.21.11/libs/*.jar # Keep libs if you have local ones, otherwise ignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project Specific
+tmp/
+STORM_DEBUG.md
+current_run.log
+client.pid
+codebase-context.skill
+.gemini/
