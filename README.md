@@ -1,5 +1,7 @@
 # Cataclysm Weather
 
+> **⚠️ Note de Version** : Ce mod est actuellement en **Version Bêta**. Des ajustements de performance et des équilibrages sont encore en cours.
+
 Un mod Minecraft haute performance conçu pour simuler des phénomènes météorologiques extrêmes et immersifs.
 
 ## Systèmes de Simulation
