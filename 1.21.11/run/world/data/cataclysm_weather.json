@@ -1,0 +1,11 @@
+{
+  "hailLevel": 0,
+  "lightningLevel": 0,
+  "meteorLevel": 0,
+  "quakeLevel": 0,
+  "hailTicksLeft": 0,
+  "lightningTicksLeft": 0,
+  "meteorTicksLeft": 0,
+  "quakeTicksLeft": 0,
+  "hasSpawnedCrevice": false
+}

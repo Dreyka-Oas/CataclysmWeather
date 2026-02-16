@@ -1,0 +1,124 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 2026-02-10 11:29:36
+Description: Bootstrap
+
+java.lang.ExceptionInInitializerError
+	at knot//net.minecraft.world.level.biome.BiomeSources.bootstrap(BiomeSources.java:8)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.method_47485(BuiltInRegistries.java:294)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.method_47482(BuiltInRegistries.java:309)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.createContents(BuiltInRegistries.java:307)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.bootStrap(BuiltInRegistries.java:301)
+	at knot//net.minecraft.server.Bootstrap.bootStrap(Bootstrap.java:70)
+	at knot//net.minecraft.client.main.Main.main(Main.java:135)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.RuntimeException: Mixin transformation of net.minecraft.world.level.biome.Biome failed
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:440)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at knot//net.minecraft.world.level.biome.FixedBiomeSource.<clinit>(FixedBiomeSource.java:18)
+	... 12 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:381)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435)
+	... 17 more
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [cataclysmweather.mixins.json:BiomeMixin from mod cataclysmweather] from phase [DEFAULT] in config [cataclysmweather.mixins.json] FAILED during APPLY
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:686)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:637)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:368)
+	... 20 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Invalid descriptor on cataclysmweather.mixins.json:BiomeMixin from mod cataclysmweather->@Inject::onGetPrecipitationAt(Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V! Expected (Lnet/minecraft/core/BlockPos;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V but found (Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V [INJECT_APPLY Applicator Phase -> cataclysmweather.mixins.json:BiomeMixin from mod cataclysmweather -> Apply Injections ->  -> Inject -> cataclysmweather.mixins.json:BiomeMixin from mod cataclysmweather->@Inject::onGetPrecipitationAt(Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V]
+	at org.spongepowered.asm.mixin.injection.callback.CallbackInjector.inject(CallbackInjector.java:560)
+	at org.spongepowered.asm.mixin.injection.callback.CallbackInjector.inject(CallbackInjector.java:490)
+	at org.spongepowered.asm.mixin.injection.code.Injector.inject(Injector.java:284)
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.inject(InjectionInfo.java:508)
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1483)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:752)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:330)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:246)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:352)
+	... 20 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Stacktrace:
+	at knot//net.minecraft.world.level.biome.BiomeSources.bootstrap(BiomeSources.java:8)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.method_47485(BuiltInRegistries.java:294)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.method_47482(BuiltInRegistries.java:309)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.createContents(BuiltInRegistries.java:307)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.bootStrap(BuiltInRegistries.java:301)
+	at knot//net.minecraft.server.Bootstrap.bootStrap(Bootstrap.java:70)
+
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at knot//net.minecraft.client.main.Main.main(Main.java:135)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.11
+	Minecraft Version ID: 1.21.11
+	Operating System: Linux (amd64) version 6.18.8-200.fc43.x86_64
+	Java Version: 21.0.2, GraalVM Community
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), GraalVM Community
+	Memory: 199082944 bytes (189 MiB) / 444596224 bytes (424 MiB) up to 16752050176 bytes (15976 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 8700F 8-Core Processor
+	Identifier: AuthenticAMD Family 25 Model 117 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: Navi 44 [Radeon RX 9060 XT]
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+	Graphics card #0 VRAM (MiB): 16640.00
+	Graphics card #0 deviceId: 0x7590
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 105677.81
+	Virtual memory used (MiB): 13438.23
+	Swap memory total (MiB): 73727.99
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 31634.78, total: 31949.82
+	Space in storage for workdir (MiB): available: 1899506.25, total: 1907728.00
+	JVM Flags: 4 total; -XX:ThreadPriorityPolicy=1 -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions
+	Debug Flags: 0 total; 
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.3.3-snapshot
+	Backend API: Unknown
+	Window size: <not initialized>
+	GFLW Platform: <error>
+	Render Extensions: ERR
+	GL debug messages: <no renderer available>
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Universe: 404
+	Type: Client (map_client.txt)
+	Locale: fr_FR
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: 16x AMD Ryzen 7 8700F 8-Core Processor

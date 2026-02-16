@@ -1,0 +1,22 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-02-10 20:59:16 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:jungle": "2026-02-15 17:55:29 +0100",
+      "minecraft:lukewarm_ocean": "2026-02-10 20:59:17 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2026-02-10 20:59:22 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 4671
+}

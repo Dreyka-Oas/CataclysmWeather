@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:chicken_spawn_egg": 8
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 534,
+      "minecraft:walk_one_cm": 936,
+      "minecraft:total_world_time": 1803,
+      "minecraft:leave_game": 3,
+      "minecraft:fly_one_cm": 3496,
+      "minecraft:sneak_time": 35,
+      "minecraft:play_time": 534,
+      "minecraft:time_since_death": 534
+    }
+  },
+  "DataVersion": 4671
+}

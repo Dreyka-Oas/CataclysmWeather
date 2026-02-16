@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:dirt": 16
+    },
+    "minecraft:dropped": {
+      "minecraft:dirt": 16
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1201,
+      "minecraft:walk_one_cm": 543,
+      "minecraft:total_world_time": 1599,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 4116,
+      "minecraft:crouch_one_cm": 53,
+      "minecraft:sneak_time": 88,
+      "minecraft:play_time": 1201,
+      "minecraft:jump": 5,
+      "minecraft:time_since_death": 1201,
+      "minecraft:drop": 16
+    }
+  },
+  "DataVersion": 4671
+}

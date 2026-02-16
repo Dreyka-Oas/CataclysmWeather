@@ -1,0 +1,50 @@
+/weather quake 1
+/weather quake 15
+/weather quake 1
+/weather quake 8
+/weather quake 1
+/weather quake 5
+/weather quake 8
+/weather quake 13
+/weather clear
+/tp Player94 1700 ~ 1700
+/tp Player94 1700 ~ 2700
+/weather quake 1
+/weather quake 5
+/weather quake 8
+/weather quake 10
+/weather quake 12
+/weather quake 15
+/weather grele 5
+/weather grele 8
+/weather grele 10
+/weather grele 13
+/weather grele 15
+/weather clear
+/time set day
+/weather meteor 5
+/weather meteor 15
+/weather clear
+/weather thunder 5
+/weather rain
+/weather thunder 5
+/weather clear
+/weather thunder 5
+/weather thunder 10
+/weather thunder 15
+/weather clear
+/wea
+/weather rain
+/weather grele
+/weather grele 12
+/weather grele 15
+/weather grele 1
+/weather meteor 15
+/weather meteor 1
+/
+/weather clear
+/weather rain,
+/weather rain
+/weather quake 15
+/weather thunder 15
+/weather clear

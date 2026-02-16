@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:chicken_spawn_egg": 1,
+      "minecraft:brown_egg": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 424,
+      "minecraft:walk_one_cm": 2044,
+      "minecraft:leave_game": 1,
+      "minecraft:damage_taken": 200,
+      "minecraft:play_time": 1303,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 394,
+      "minecraft:sprint_one_cm": 190,
+      "minecraft:fall_one_cm": 2854,
+      "minecraft:total_world_time": 1352,
+      "minecraft:fly_one_cm": 22676,
+      "minecraft:walk_on_water_one_cm": 32,
+      "minecraft:sneak_time": 28,
+      "minecraft:deaths": 1
+    }
+  },
+  "DataVersion": 4671
+}

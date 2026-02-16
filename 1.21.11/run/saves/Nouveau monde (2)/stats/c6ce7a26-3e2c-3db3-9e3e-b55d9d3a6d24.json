@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:leaf_litter": 2,
+      "minecraft:dark_oak_sapling": 5,
+      "minecraft:oak_sapling": 7
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 437,
+      "minecraft:time_since_rest": 8334,
+      "minecraft:walk_one_cm": 3335,
+      "minecraft:total_world_time": 8460,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 18730,
+      "minecraft:sneak_time": 9,
+      "minecraft:play_time": 8334,
+      "minecraft:jump": 14,
+      "minecraft:time_since_death": 8334,
+      "minecraft:drop": 15
+    },
+    "minecraft:dropped": {
+      "minecraft:dark_oak_sapling": 5,
+      "minecraft:leaf_litter": 2,
+      "minecraft:dirt": 1,
+      "minecraft:oak_sapling": 7
+    },
+    "minecraft:used": {
+      "minecraft:dirt": 1
+    }
+  },
+  "DataVersion": 4671
+}

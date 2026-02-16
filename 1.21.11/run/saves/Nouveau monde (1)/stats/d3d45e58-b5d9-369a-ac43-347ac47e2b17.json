@@ -1,0 +1,30 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 662,
+      "minecraft:time_since_rest": 954,
+      "minecraft:walk_one_cm": 8087,
+      "minecraft:total_world_time": 1632,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 1783,
+      "minecraft:play_time": 954,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 954,
+      "minecraft:drop": 9
+    },
+    "minecraft:picked_up": {
+      "minecraft:brown_egg": 8,
+      "minecraft:bone": 2,
+      "minecraft:arrow": 1
+    },
+    "minecraft:used": {
+      "minecraft:brown_egg": 98
+    },
+    "minecraft:dropped": {
+      "minecraft:arrow": 1,
+      "minecraft:bone": 2,
+      "minecraft:brown_egg": 6
+    }
+  },
+  "DataVersion": 4671
+}
